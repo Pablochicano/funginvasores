@@ -12,7 +12,7 @@ body{
 
 .grid {
     display: grid;
-    grid-template-columns: 8em 1fr 1fr 8em;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
     grid-template-rows: repeat(4 auto);
     grid-gap: 4em;
 }
@@ -77,6 +77,10 @@ body{
 }
 
 @media screen and (max-width: 740px) {
+    .grid>header .logo>h1 {
+        font-size: 8vw;
+    }
+    
     .grid .categorias {
         grid-column: 2 / 4;
         grid-row: 3;
