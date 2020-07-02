@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 8em 1fr 1fr 8em;
+    grid-template-rows: repeat(4 auto);
+    grid-gap: 4em;
+}
+
+.grid>header {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.grid>header .herramientas {
+    border-bottom: 1px solid gray;
+    
+}
+
+.grid>header .herramientas nav li{
+    display: inline-block;
+}
+
+.grid>header .herramientas nav li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1ex 3ex;
+    color: gray;
+}
+
+.grid>header .herramientas nav li a:hover {
+    color: white;
+}
+
+.grid>header .logo {
+    background-color: black;
+    color: white;
+    
+
+}
+
+.grid>header .logo>h1 {
+    font-size: 4em;
+    font-weight: 900;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1ex;
+}
+
+.descripcion {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.categorias {
+    grid-column: 3;
+    grid-row: 2; 
+}
+
+.backgroundnegro {
+    background-color: black;
+    grid-column: 1 / 5;
+    grid-row: 1;
+    z-index: -1;
+}
+
+@media screen and (max-width: 740px) {
+    .grid .categorias {
+        grid-column: 2 / 4;
+        grid-row: 3;
+        justify-self: center;
+    }
+
+    .grid>header .herramientas nav li{
+        display: block;
+        text-align: center;
+    }
+
+    .descripcion {
+        grid-column: 2 / 4;
+        grid-row: 2;
+        text-align: center;
+    }
+
+}
