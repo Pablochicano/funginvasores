@@ -100,7 +100,10 @@ p {
 }*/
 
 @media screen and (max-width: 740px) {
-    
+    .grid>header {
+        grid-column: 1 / 5;       
+    }
+
     .grid .categorias {
         grid-column: 2 / 4;
         grid-row: 4;
