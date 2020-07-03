@@ -8,12 +8,13 @@
 body{
     font-family: 'Barlow', sans-serif;
     min-width: 300px;
+    background-color: #040f24;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
-    grid-template-rows: repeat(4 auto);
+    grid-template-rows: repeat(10 auto);
     grid-gap: 4em;
     
 }
@@ -22,81 +23,100 @@ body{
     grid-column: 2 / 4;
     grid-row: 1;
     justify-self: center;
-}
-
-.grid>header .herramientas {
-    border-bottom: 1px solid gray;
     
 }
 
-.grid>header .herramientas nav li{
+.grid> .herramientas {
+    border-bottom: 1px solid gray;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    justify-self: center;
+    align-self: flex-start;
+    
+}
+
+.grid> .herramientas nav li{
     display: inline-block;
 }
 
-.grid>header .herramientas nav li a {
+.grid> .herramientas nav li a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1ex 3ex;
     color: gray;
-}
-
-.grid>header .herramientas nav li a:hover {
-    color: white;
-}
-
-.grid>header .logo {
-    background-color: black;
-    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
     
-
 }
 
-.grid>header .logo>h1 {
-    font-size: 4em;
-    font-weight: 900;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1ex;
+.grid> .herramientas nav li a:hover {
+    color: white;
 }
+
+
+.grid>header .logo>img {
+    width: 80vw;
+    justify-self: center;
+    align-self: center;
+}
+
 
 .descripcion {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .categorias {
     grid-column: 3;
-    grid-row: 2; 
+    grid-row: 3; 
+    justify-self: center;
+    align-self: center;
 }
 
-.backgroundnegro {
-    background-color: black;
-    grid-column: 1 / 5;
-    grid-row: 1;
-    z-index: -1;
+.categorias>li { 
+    list-style-type: none;
 }
+
+.categorias>li a { 
+    text-decoration: none;
+    color: gray;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    color: gray;
+}
+p {
+    color: gray;
+}
+/*.backgroundnegro {
+    background-image: url(img/header.png);
+    background-size: cover;
+    grid-column: 2 / 4;
+    grid-row: 1 / 8;
+    z-index: -1;
+}*/
 
 @media screen and (max-width: 740px) {
-    .grid>header .logo>h1 {
-        font-size: 8vw;
-    }
     
     .grid .categorias {
         grid-column: 2 / 4;
-        grid-row: 3;
+        grid-row: 4;
         justify-self: center;
     }
 
-    .grid>header .herramientas nav li{
+    .grid> .herramientas nav li{
         display: block;
         text-align: center;
     }
 
     .descripcion {
         grid-column: 2 / 4;
-        grid-row: 2;
+        grid-row: 3;
         text-align: center;
     }
+
 
 }
