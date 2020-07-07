@@ -56,7 +56,6 @@ p {
     grid-row: 2;
     justify-self: center;
     align-self: flex-start;
-    
 }
 
 /*.grid>.herramientas .sticky { /*Para mantener la toolbar en la parte superior de la página
@@ -95,6 +94,8 @@ p {
 .descripcion {
     grid-column: 3 / 7;
     grid-row: 3;
+    margin-top: 3em;
+    margin-bottom: 6em;
 }
 
 .descripcion>h1 {
@@ -107,9 +108,29 @@ p {
     text-align: center;
 }
 
+.fungis1 {
+    grid-column: 3 / 5;
+    grid-row: 4;
+}
+
+.fungis1>img {
+    width: 100%;
+}
+
+.fungis2 {
+    grid-column: 5 / 7;
+    grid-row: 4;
+}
+
+.fungis2>img {
+    width: 100%;
+}
+
 .descripcion2 {
     grid-column: 3 / 7;
-    grid-row: 4;
+    grid-row: 5;
+    margin-top: 6em;
+    margin-bottom: 3em;
 }
 
 .descripcion2>h2 {
@@ -122,34 +143,18 @@ p {
     text-align: center;
 }
 
-.categorias {
-    grid-column: 3;
-    grid-row: 6; 
-    justify-self: center;
-    align-self: center;
-}
-
-.categorias>li { 
-    list-style-type: none;
-}
-
-.categorias>li a { 
-    text-decoration: none;
-    color: gray;
-    font-size: 3em;
-    font-weight: bold;
-}
-
 .video {
     grid-column: 3 / 7;
-    grid-row: 5;
+    grid-row: 7;
 }
 
 .video{
     position: relative;
-    width: 100%;
+    width: 80%;
+    height: auto;
     padding-bottom: 56.25%; 
     height: 0;
+    justify-self: center;
   }
   .video iframe {
     position: absolute;
@@ -159,13 +164,47 @@ p {
     height: 100%;
   }
 
-/*.backgroundnegro {
-    background-image: url(img/header.png);
-    background-size: cover;
-    grid-column: 2 / 4;
-    grid-row: 1 / 8;
-    z-index: -1;
-}*/
+.button2 {
+    grid-column: 3 / 7;
+    grid-row: 8;
+    justify-self: center;
+    
+    
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+.button2 a {
+    text-decoration: none;
+    background-color: #0E285A;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1ex 2ex;
+
+}
+
+  .franja {
+    grid-column: 1 / 9;
+    grid-row: 9;  
+}
+
+.franja>img {
+    width: 100%;
+}
+
+.footer {
+    grid-column: 1 / 9;
+      grid-row: 11;
+}
+
+  .footer>img {
+      width: 100%;
+  }
+
 
 @media screen and (max-width: 740px) {
    
