@@ -39,7 +39,7 @@ p {
 .grid {
     display: grid;
     grid-template-columns: 0.2fr 0.4fr 1fr 0.1fr 0.1fr 1fr 0.4fr 0.2fr;
-    grid-template-rows: repeat(10 auto);
+    grid-template-rows: auto [last-line];
     grid-gap: none;
     
 }
@@ -92,14 +92,14 @@ p {
 }
 
 
-.descripcion {
+.descripcion, .fungititulo {
     grid-column: 3 / 7;
     grid-row: 3;
     margin-top: 3em;
     margin-bottom: 6em;
 }
 
-.descripcion>h1 {
+.descripcion>h1, .fungititulo>h2 {
     text-justify: center;
     text-align: center;
 }
@@ -129,19 +129,14 @@ p {
     width: 100%;
 }
 
-.descripcion2 {
+.descripcion2, .fungitexto {
     grid-column: 3 / 7;
     grid-row: 5;
     margin-top: 6em;
     margin-bottom: 3em;
 }
 
-.descripcion2>h2 {
-    text-justify: center;
-    text-align: center;
-}
-
-.descripcion2>p {
+.descripcion2>h2, .descripcion2>p, .fungitexto {
     text-justify: center;
     text-align: center;
 }
@@ -240,14 +235,74 @@ p {
 
 .footer {
     grid-column: 1 / 9;
-      grid-row: 10;
+      grid-row: 15;
 }
 
   .footer>img {
       width: 100%;
   }
 
+/*Funginvasores*/
+.chile {
+    grid-column: 3 / 7;
+    grid-row: 4;
+}
 
+.chile>img {
+    justify-self: center;
+    width: 100%;
+}
+
+.ciano {
+    grid-column: 6;
+    grid-row: 6;
+}
+
+.fungiciano {
+    grid-column: 3;
+    grid-row: 6; 
+}
+
+.soma {
+    grid-column: 6;
+    grid-row: 7;
+}
+
+.fungisoma {
+    grid-column: 3;
+    grid-row: 7; 
+}
+
+.fungiflamma {
+    grid-column: 3;
+    grid-row: 8; 
+}
+
+.fungicorti {
+    grid-column: 3;
+    grid-row: 9; 
+}
+
+.fungiciano>img, .fungisoma>img, .fungiflamma>img, .fungicorti>img {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+
+/*Modos de juego*/
+.expansion {
+    grid-column: 3;
+    grid-row: 4;
+    text-align: center;
+}
+
+.crecimiento {
+    grid-column: 6;
+    grid-row: 4;
+    text-align: center;
+}
+
+/*Diy*/
 @media screen and (max-width: 740px) {
    
     .grid> .herramientas nav li{
@@ -301,5 +356,38 @@ p {
         justify-self: center;
         text-align: center;
     }
+
+    .ciano {
+        grid-column: 2 / 8;
+        grid-row: 6;
+        margin-bottom: 2em;
+    }
+    
+    .fungiciano {
+        grid-column: 2 / 8;
+        grid-row: 7; 
+    }
+    
+    .soma {
+        grid-column: 2 / 8;
+        grid-row: 8;
+        margin-bottom: 2em;
+    }
+    
+    .fungisoma {
+        grid-column: 2 / 8;
+        grid-row: 9; 
+    }
+    
+    .fungiflamma {
+        grid-column: 2 / 8;
+        grid-row: 10; 
+    }
+    
+    .fungicorti {
+        grid-column: 2 / 8;
+        grid-row: 11; 
+    }
+
 
 }
