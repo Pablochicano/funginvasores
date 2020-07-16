@@ -273,9 +273,19 @@ p {
     grid-row: 7; 
 }
 
+.flamma {
+    grid-column: 6;
+    grid-row: 8;
+}
+
 .fungiflamma {
     grid-column: 3;
     grid-row: 8; 
+}
+
+.corti {
+    grid-column: 6;
+    grid-row: 9;
 }
 
 .fungicorti {
@@ -290,19 +300,131 @@ p {
 
 
 /*Modos de juego*/
-.expansion {
+.fungiexpansion {
     grid-column: 3;
     grid-row: 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.flammapequeno {
+    grid-column: 3;
+    grid-row: 4;
+    justify-self: right;
+    z-index: -1;
+}
+
+.fungicrecimiento {
+    grid-column: 6;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.cortipequeno {
+    grid-column: 6;
+    grid-row: 4;
+    justify-self: right;
+    z-index: -1;
+}
+
+.flammapequeno>img, .cortipequeno>img {
+    height: 7em;
+}
+
+.expansion {
+    grid-column: 3;
+    grid-row: 5;
     text-align: center;
 }
 
 .crecimiento {
     grid-column: 6;
-    grid-row: 4;
+    grid-row: 5;
     text-align: center;
 }
 
+.franjapiezas {
+    grid-column: 3 / 7;
+    grid-row: 6;
+}
+
+.franjapiezas>img {
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/*img pequeñas*/
+.somapequeno {
+    grid-column: 3;
+    grid-row: 7;
+}
+
+.discopequeno {
+    grid-column: 3;
+    grid-row: 7;
+    justify-self: right;
+}
+
+.coccipequeno {
+    grid-column: 6;
+    grid-row: 7;
+}
+
+.cyanpequeno {
+    grid-column: 6;
+    grid-row: 7;
+    justify-self: right;
+}
+
+.somapequeno>img, .discopequeno>img, .coccipequeno>img, .cyanpequeno>img {
+    height: 7em;
+}
+
+.infopequena {
+    grid-column: 3 / 7;
+    grid-row: 8;
+    justify-self: center;
+}
+
+.infopequena p {
+    text-justify: center;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
 /*Diy*/
+
+.botondescarga {
+    grid-column: 3;
+    grid-row: 6;
+    justify-self: center;
+    
+    
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+.botondescarga a {
+    text-decoration: none;
+    background-color: #09A17D;
+    border: none;
+    color: #F4F4F4;
+    border-radius: 0.5em;
+    
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1ex 2ex;
+}
+
+.amigos {
+    grid-column: 3 / 7;
+    grid-row: 7;
+    justify-self: center;    
+}
+
 @media screen and (max-width: 740px) {
    
     .grid> .herramientas nav li{
@@ -357,6 +479,7 @@ p {
         text-align: center;
     }
 
+/*Funginvasores*/
     .ciano {
         grid-column: 2 / 8;
         grid-row: 6;
@@ -379,15 +502,88 @@ p {
         grid-row: 9; 
     }
     
-    .fungiflamma {
+    .flamma {
         grid-column: 2 / 8;
-        grid-row: 10; 
+        grid-row: 10;
+        margin-bottom: 2em;
     }
-    
-    .fungicorti {
+    .fungiflamma {
         grid-column: 2 / 8;
         grid-row: 11; 
     }
+    
+    .corti {
+        grid-column: 2 / 8;
+        grid-row: 12;
+        margin-bottom: 2em;
+    }
 
+    .fungicorti {
+        grid-column: 2 / 8;
+        grid-row: 13; 
+    }
+
+/*modos*/
+.fungiexpansion {
+    grid-column: 2 / 8;
+    grid-row: 4;
+}
+
+.flammapequeno {
+    grid-column: 2 / 8;
+    grid-row: 4;
+    justify-self: right;
+}
+
+.expansion {
+    grid-column: 2 / 8;
+    grid-row: 5;
+}
+
+.fungicrecimiento {
+    grid-column: 2 / 8;
+    grid-row: 6;
+}
+
+.cortipequeno {
+    grid-column: 2 / 8;
+    grid-row: 6;
+    justify-self: right;
+}
+
+.crecimiento {
+    grid-column: 2 / 8;
+    grid-row: 7;
+}
+
+.franjapiezas {
+    grid-column: 2 / 8;
+    grid-row: 8;
+}
+
+.somapequeno {
+    grid-column: 2 / 8;
+    grid-row: 9;
+}
+
+.discopequeno {
+    grid-column: 2 / 8;
+    grid-row: 9;
+}
+
+.coccipequeno {
+    grid-column: 2 / 8;
+    grid-row: 10;
+}
+
+.cyanpequeno {
+    grid-column: 2 / 8;
+    grid-row: 10;
+}
+
+.infopequena {
+    grid-column: 2 / 8;
+    grid-row: 11;
+}
 
 }
