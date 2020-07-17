@@ -15,11 +15,19 @@ h1 {
     font-size: 3em;
     font-weight: bold;
     color: #DBDBDB;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 h2 {
     font-size: 2em;
     font-weight: bold;
+    color: #DBDBDB;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 300;
     color: #DBDBDB;
 }
 
@@ -35,6 +43,8 @@ p {
     color: #F4F4F4;
     border-radius: 0.5em;
 }
+
+
 
 .grid {
     display: grid;
@@ -129,11 +139,22 @@ p {
     width: 100%;
 }
 
-.descripcion2, .fungitexto {
+.fungitexto {
+    grid-column: 3 / 7;
+    grid-row: 5;
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.descripcion2 {
     grid-column: 3 / 7;
     grid-row: 5;
     margin-top: 6em;
     margin-bottom: 3em;
+}
+
+.descripcion2>h2 {
+    margin-bottom: 1em;
 }
 
 .descripcion2>h2, .descripcion2>p, .fungitexto {
@@ -199,12 +220,13 @@ p {
     grid-row: 9; 
     justify-self: center;
     text-align: center;
+    
 }
 
-.descripcion3 p {
+.descripcion3 h3 {
     font-size: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     font-weight: bmedium;
     color: #3D3D3D;
 }
@@ -216,7 +238,7 @@ p {
     color: #F4F4F4;
     border-radius: 0.5em;
     
-    font-size: 3em;
+    font-size: 4vw;
     font-weight: bold;
     padding: 1ex 2ex;
 }
@@ -228,7 +250,7 @@ p {
     color: #F4F4F4;
     border-radius: 0.5em;
     
-    font-size: 2em;
+    font-size: 3vw;
     font-weight: bold;
     padding: 1ex 2ex;
 }
@@ -260,7 +282,7 @@ p {
 
 .fungiciano {
     grid-column: 3;
-    grid-row: 6; 
+    grid-row: 6;
 }
 
 .soma {
@@ -293,9 +315,12 @@ p {
     grid-row: 9; 
 }
 
+.fungiciano, .ciano, .fungisoma, .soma, .fungiflamma, .flamma, .fungicorti, .corti {
+    margin-bottom: 7em;
+}
+
 .fungiciano>img, .fungisoma>img, .fungiflamma>img, .fungicorti>img {
     width: 100%;
-    margin-bottom: 3em;
 }
 
 
@@ -470,6 +495,10 @@ p {
         
         margin-top: 3em;
         margin-bottom: 6em;
+    }
+    
+    .button2 a {
+        font-size: 4vw;
     }
 
     .descripcion3 {
