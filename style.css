@@ -551,6 +551,29 @@ p {
     margin-bottom: 3em;
 }
 
+/*Compras*/
+
+.fungiconstructor {
+    grid-column: 3 / 7;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.fungiconstructor>img {
+    height: 100%;
+}
+
+.fungititulocompras {
+    grid-column: 3 / 7;
+    grid-row: 4;
+    justify-self: center;
+    margin-bottom: 7em;
+}
+
+.fungititulocompras>h2, .fungititulocompras>p {
+    text-align: center;
+}
+
 @media screen and (max-width: 980px) {
    
     .grid> .herramientas nav li{
@@ -631,6 +654,10 @@ p {
     }
 
 /*Funginvasores*/
+    .chile, .fungitexto {
+        grid-column: 2 / 8;
+    }
+
     .ciano {
         grid-column: 2 / 8;
         grid-row: 6;
@@ -743,6 +770,10 @@ p {
     margin-top: 7em;
 }
 
+.manual1 {
+    font-size: 1.5em;
+}
+
 /*Diy*/
 .expandiendo, .tutorial, .botondescarga, .botondescarga2 {
     grid-column: 2 / 8;
@@ -767,5 +798,12 @@ p {
 .footer, .footerinfo1, .footerinfo2 {
     display: none;
 }
+
+/*Compras*/
+
+.fungiconstructor, .fungititulocompras {
+    grid-column: 2 / 8;
+}
+
 
 }
