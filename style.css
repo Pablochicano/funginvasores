@@ -113,7 +113,7 @@ p {
     text-align: center;
 }
 
-.descripcion>p {
+.descripcion>p, .fungititulo>p {
     text-justify: center;
     text-align: center;
 }
@@ -168,7 +168,7 @@ p {
 
 .video{
     position: relative;
-    width: 80%;
+    width: 100%;
     height: auto;
     padding-bottom: 56.25%; 
     height: 0;
@@ -261,8 +261,41 @@ p {
 
   .footer>img {
       width: 100%;
-      margin-top: 7em;
+      z-index: -1;
   }
+
+.footerinfo1 {
+    grid-column: 2 / 4;
+    grid-row: 15;
+    align-self: center;
+    margin-bottom: none;
+}
+
+.footerinfo2 {
+    grid-column: 6 / 8;
+    grid-row: 15;
+    justify-self: right;
+    align-self: center;
+    margin-bottom: none;
+}
+
+.footerinfo2>a {
+    text-justify: right;
+    justify-self: right;
+}
+
+.footerinfo1>a:link, .footerinfo1>a:visited, .footerinfo2>a:link, .footerinfo2>a:visited {
+    color:  #DBDBDB;
+}
+
+.footerinfo1>a:active, .footerinfo2>a:active {
+    color: #F4F4F4;
+}
+
+.footerinfo2>img {
+    width: 20em;
+}
+
 
 /*Funginvasores*/
 .chile {
@@ -380,6 +413,28 @@ p {
     margin-bottom: 3em;
 }
 
+.manual {
+    grid-column: 3 / 7;
+    grid-row: 9;
+    justify-self: center;
+    
+    
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+.manual1 {
+    text-decoration: none;
+    background-color: #09A17D;
+    border: none;
+    color: #F4F4F4;
+    border-radius: 0.5em;
+    
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1ex 2ex;
+}
+
 /*img pequeñas*/
 .somapequeno {
     grid-column: 3;
@@ -421,10 +476,29 @@ p {
 }
 
 /*Diy*/
+.expandiendo {
+    grid-column: 3 / 7;
+    grid-row: 4;
+}
+
+.expandiendo>h2, .expandiendo>p {
+    justify-self: center;
+    text-align: center;
+}
+
+.tutorial {
+    grid-column: 3 / 7;
+    grid-row: 5;
+}
+
+.tutorial>h2, .tutorial>p {
+    justify-self: center;
+    text-align: center;
+}
 
 .botondescarga {
-    grid-column: 3;
-    grid-row: 6;
+    grid-column: 3 / 7;
+    grid-row: 7;
     justify-self: center;
     
     
@@ -432,7 +506,7 @@ p {
     margin-bottom: 6em;
 }
 
-.botondescarga a {
+.botondescarga a, .botondescarga2 a {
     text-decoration: none;
     background-color: #09A17D;
     border: none;
@@ -446,8 +520,21 @@ p {
 
 .amigos {
     grid-column: 3 / 7;
-    grid-row: 7;
+    grid-row: 8;
     justify-self: center;    
+}
+
+.amigos>h2, .amigos>p {
+    text-align: center;
+}
+.botondescarga2 {
+    grid-column: 3 / 7;
+    grid-row: 10;
+    justify-self: center;
+    
+    
+    margin-top: 3em;
+    margin-bottom: 6em;
 }
 
 @media screen and (max-width: 980px) {
@@ -506,6 +593,7 @@ p {
         grid-row: 9; 
         justify-self: center;
         text-align: center;
+        margin-top: 3em;
     }
 
     .descripcion3 .button {
@@ -523,7 +611,7 @@ p {
     .fondoblanco {
         grid-column: 1 / 9;
         grid-row: 9;
-        height: 200%;
+        height: 150%;
         background-color: white;
         z-index: -1;
     }
@@ -622,17 +710,32 @@ p {
 
 .coccipequeno {
     grid-column: 2 / 8;
-    grid-row: 10;
+    grid-row: 11;
 }
 
 .cyanpequeno {
     grid-column: 2 / 8;
-    grid-row: 10;
+    grid-row: 11;
 }
 
 .infopequena {
     grid-column: 2 / 8;
-    grid-row: 11;
+    grid-row: 10;
+}
+
+.manual {
+    grid-column: 2 / 8;
+    grid-row: 12;
+    margin-top: 7em;
+}
+
+/*Diy*/
+.expandiendo, .tutorial, .botondescarga, .botondescarga2 {
+    grid-column: 3 / 7;
+}
+
+.footer, .footerinfo1, .footerinfo2 {
+    display: none;
 }
 
 }
