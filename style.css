@@ -805,5 +805,9 @@ p {
     grid-column: 2 / 8;
 }
 
+.fungiconstructor>img {
+    margin-top: 5em;
+    height: 60vw;
+}
 
 }
