@@ -356,6 +356,10 @@ p {
     width: 100%;
 }
 
+.ciano>h2, .soma>h2, .flamma>h2, .corti>h2 {
+    margin-bottom: 0.2em;
+}
+
 
 /*Modos de juego*/
 .fungiexpansion {
@@ -497,6 +501,14 @@ p {
     text-align: center;
 }
 
+.tutorial>h2 {
+    margin-bottom: 2em;
+}
+
+.tutorial>p {
+    margin-top: 2em;
+}
+
 .botondescarga {
     grid-column: 3 / 7;
     grid-row: 7;
@@ -528,6 +540,10 @@ p {
 
 .amigos>h2, .amigos>p {
     text-align: center;
+}
+
+.amigos>h2 {
+    margin-bottom: 1em;
 }
 
 .fungifranja1 {
